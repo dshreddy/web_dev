@@ -1,4 +1,4 @@
-# JAVA SCRIPT REPO
+# MY JS REPO
 
 # Projects
 
