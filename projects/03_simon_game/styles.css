@@ -1,13 +1,16 @@
 body {
   text-align: center;
-  background-color: #011F3F;
+  /* background-color: black; */
+}
+footer{
+  color: red;
 }
 
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
   margin:  5%;
-  color: #FEF2BF;
+  color: white;
 }
 
 .container {
