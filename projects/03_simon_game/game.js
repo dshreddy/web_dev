@@ -1,70 +1,81 @@
+//description 
+$(".description p").hide(); 
+$("#desbtn").click(function() {
+  $(".description p").fadeToggle();
+});
 
-var buttonColours = ["red", "blue", "green", "yellow"];
-
-var gamePattern = [];
-var userClickedPattern = [];
-
+//iniialising required variables & constants
 var started = false;
 var level = 0;
+var gamePattern = [];
+var userPattern = [];
+const BUTTON_COLORS = ["red", "blue", "green", "yellow"];
 
+// initialising the game when some key is pressed for the first time
 $(document).keypress(function() {
   if (!started) {
-    $("#level-title").text("Level " + level);
-    nextSequence();
+
     started = true;
+    startNewLevel();
   }
 });
 
+// when a color is pressed during the game
 $(".btn").click(function() {
 
-  var userChosenColour = $(this).attr("id");
-  userClickedPattern.push(userChosenColour);
+  var pressedColor = $(this).attr("id");
+  userPattern.push(pressedColor);
 
-  playSound(userChosenColour);
-  animatePress(userChosenColour);
-
-  checkAnswer(userClickedPattern.length-1);
+  playSound(pressedColor);
+  animatePress(pressedColor);
+  checkAnswer(userPattern.length-1);
 });
 
 function checkAnswer(currentLevel) {
 
-    if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
-      if (userClickedPattern.length === gamePattern.length){
-        setTimeout(function () {
-          nextSequence();
-        }, 1000);
+    //each press userPattern[i] should match with gamePattern[i]
+    if (gamePattern[currentLevel] === userPattern[currentLevel]) {
+
+      //if the last color of gamePattern is pressed, next level is called
+      if (userPattern.length === gamePattern.length){
+        setTimeout(function () { startNewLevel(); }, 1000);
       }
-    } else {
+    } 
+    else {
+
+      //game over
       playSound("wrong");
       $("body").addClass("game-over");
       $("#level-title").text("Game Over, Press Any Key to Restart");
 
-      setTimeout(function () {
-        $("body").removeClass("game-over");
-      }, 200);
-
+      setTimeout(function () { $("body").removeClass("game-over"); }, 100);
       startOver();
     }
 }
 
+function startNewLevel() {
 
-function nextSequence() {
-  userClickedPattern = [];
+  // user pattern should be empy at the start of each level
+  userPattern = [];
+
+  //updating level
   level++;
   $("#level-title").text("Level " + level);
+
+  //new color for new level
   var randomNumber = Math.floor(Math.random() * 4);
-  var randomChosenColour = buttonColours[randomNumber];
+  var randomChosenColour = BUTTON_COLORS[randomNumber];
   gamePattern.push(randomChosenColour);
 
+  //chosen color animation & sound
   $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
   playSound(randomChosenColour);
 }
 
 function animatePress(currentColor) {
+
   $("#" + currentColor).addClass("pressed");
-  setTimeout(function () {
-    $("#" + currentColor).removeClass("pressed");
-  }, 100);
+  setTimeout(function () { $("#" + currentColor).removeClass("pressed"); }, 100);
 }
 
 function playSound(name) {
@@ -73,7 +84,8 @@ function playSound(name) {
 }
 
 function startOver() {
+  started = false;
   level = 0;
   gamePattern = [];
-  started = false;
+  userPattern = [];
 }
