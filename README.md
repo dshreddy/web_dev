@@ -1,3 +1,5 @@
+# JAVA SCRIPT REPO
+
 - This repository contains all of my JS code I wrote while learning the course : https://www.udemy.com/course/the-complete-web-development-bootcamp/
 
 Quick links for projects in this repository : 
