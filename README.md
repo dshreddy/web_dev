@@ -1,6 +1,6 @@
 # JAVA SCRIPT REPO
 
-# Quick links for projects in this repository 
+# Projects
 
 - drum kit : https://dshreddy.github.io/java_script/projects/02_drum_kit/
 - simon game : https://dshreddy.github.io/java_script/projects/03_simon_game/
