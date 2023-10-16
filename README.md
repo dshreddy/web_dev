@@ -1,4 +1,4 @@
-# MY JS REPO
+# MY Web Development REPO
 
 ## Description 
 - This repository contains all of my code I wrote as part of the course : https://www.udemy.com/course/the-complete-web-development-bootcamp/
