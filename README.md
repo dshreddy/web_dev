@@ -9,6 +9,6 @@
 ### HTML, CSS & JS Projects
 
 - My CV : https://dshreddy.github.io/portfolio/
-- Drum kit : https://dshreddy.github.io/web_dev/projects/02_drum_kit/
-- Simon game : https://dshreddy.github.io/web_dev/projects/03_simon_game/
-- Dice game : https://dshreddy.github.io/web_dev/projects/01_dice_game/
+- Drum kit : https://dshreddy.github.io/web_dev/projects/js/02_drum_kit/
+- Simon game : https://dshreddy.github.io/web_dev/projects/js/03_simon_game/
+- Dice game : https://dshreddy.github.io/web_dev/projects/js/01_dice_game/
