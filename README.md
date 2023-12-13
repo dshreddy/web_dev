@@ -10,7 +10,7 @@
 
 ### BOOTSTRAP
 
-- [0_intro](https://dshreddy.github.io/web_dev/04_boot_strap/0_intro)
+- [0_intro](https://dshreddy.github.io/web_dev/04_bootstrap/0_intro)
 
 ### JS
 
@@ -24,9 +24,9 @@
 ### CSS
 
 - [just add css](https://dshreddy.github.io/web_dev/projects/css/00_just_add_css/)
-- [motivational meme](https://dshreddy.github.io/web_dev/projects/css/01_motivational_meme_project/)
+- [motivational meme](https://dshreddy.github.io/web_dev/projects/css/01_motivation_meme_project/)
 - [color vocab](https://dshreddy.github.io/web_dev/projects/css/02_color_vocab_project)
-- [flag project](https://dshreddy.github.io/web_dev/projects/css/03_flag_project)
+- [~flag project~](https://dshreddy.github.io/web_dev/projects/css/03_flag_project)
 
 - [0_selectors](https://dshreddy.github.io/web_dev/02_css/0_selectors)
 - [1_colors](https://dshreddy.github.io/web_dev/02_css/1_colors)
@@ -36,7 +36,7 @@
 - [3_box_model](https://dshreddy.github.io/web_dev/02_css/3_box_model)
 - [4_cascade](https://dshreddy.github.io/web_dev/02_css/4_cascade)
 - [5_combining_selectors](https://dshreddy.github.io/web_dev/02_css/5_combining_selectors)
-- [6_positioning](https://dshreddy.github.io/web_dev/02_css/6_positioning/index.html)
+- [~6_positioning~](https://dshreddy.github.io/web_dev/02_css/6_positioning/index.html)
 
 ### HTML
 
